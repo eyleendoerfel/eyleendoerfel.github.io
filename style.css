@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-block {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.hero-block__column {
+    min-width: 50%;
+    background: beige;
+    min-height: 250px;
+}
+
+.hero-block__column--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-block__column--right {
+    background: beige;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .hero-block__column {
+        min-height: 450px;
+    }
+
+}
